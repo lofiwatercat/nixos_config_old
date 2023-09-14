@@ -16,10 +16,7 @@
     stateVersion = "23.05";
     sessionVariables = {
       EDITOR = "hx";
-    };
-
-    sessionVariables = {
-      EDITOR = "hx";
+      TERMINAL = "foot";
     };
 
     packages = with pkgs; [

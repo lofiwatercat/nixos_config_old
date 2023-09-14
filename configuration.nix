@@ -66,9 +66,6 @@
   users.users.alan = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
-    environment = {
-      EDITOR = "hx";
-    };
   };
 
   nix.settings.trusted-users = [ "alan" ];

@@ -3,10 +3,9 @@
 {
   programs.bash = {
     enable = true;
-    interactiveShellInit = ''
-      alias cpwd="pwd | wl-copy"
-      alias cdwd="cd $(wl-paste)";
-      PS1='\w \$ '
-    '';
+    shellAliases = {
+      cpwd = "pwd | wl-copy";
+      cdwd = "cd $(wl-paste)";
+    };
   };
 }
