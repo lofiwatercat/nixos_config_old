@@ -3,6 +3,7 @@
 {
   imports =
     [ 
+      ./dotfiles/bash.nix
       ./dotfiles/git.nix
       ./dotfiles/foot.nix
       ./dotfiles/helix.nix
@@ -13,6 +14,13 @@
     username = "alan";
     homeDirectory = "/home/alan";
     stateVersion = "23.05";
+    sessionVariables = {
+      EDITOR = "hx";
+    };
+
+    sessionVariables = {
+      EDITOR = "hx";
+    };
 
     packages = with pkgs; [
       fuzzel

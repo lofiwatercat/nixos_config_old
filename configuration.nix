@@ -34,7 +34,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   # Fonts
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
@@ -64,9 +64,12 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.alan = {
-     isNormalUser = true;
-     extraGroups = [ "wheel" "networkmanager" ];
-   };
+    isNormalUser = true;
+    extraGroups = [ "wheel" "networkmanager" ];
+    environment = {
+      EDITOR = "hx";
+    };
+  };
 
   nix.settings.trusted-users = [ "alan" ];
 
