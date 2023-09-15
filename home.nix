@@ -18,14 +18,13 @@
     sessionVariables = {
       EDITOR = "hx";
       TERMINAL = "foot";
+      WINIT_UNIX_BACKEND = "wayland";
     };
 
     packages = with pkgs; [
       fuzzel
-      # cargo
-      # rustc
-      # rust-analyzer
       swww
+      wayland
     ];
   };
 
@@ -37,10 +36,17 @@
       };
       to = {
         type = "path";
-        # path = "./dev_flakes/rust-flake";
         path = toString ./. + "/dev_flakes/rust-flake";
-        # owner = "lofiwatercat";
-        # repo = "nixos_config";
+      };
+    };
+    ash = {
+      from = {
+        id = "ash";
+        type = "indirect";
+      };
+      to = {
+        type = "path";
+        path = toString ./. + "/dev_flakes/ash-flake";
       };
     };
   };

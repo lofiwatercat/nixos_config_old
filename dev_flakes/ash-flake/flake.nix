@@ -1,5 +1,5 @@
 {
-  description = "A flake for Rust development";
+  description = "A flake for Ash development";
 
   inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
 
@@ -12,6 +12,12 @@
         rustc
         cargo
         rust-analyzer
+        vulkan-tools
+        vulkan-loader
+        vulkan-headers
+        vulkan-caps-viewer
+        vulkan-tools-lunarg
+        vulkan-validation-layers
         # openssl
         # pkgconfig
       ];
