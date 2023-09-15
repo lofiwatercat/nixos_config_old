@@ -7,5 +7,8 @@
       cpwd = "pwd | wl-copy";
       cdwd = "cd $(wl-paste)";
     };
+    bashrcExtra = ''
+      export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
+    '';
   };
 }

@@ -15,5 +15,7 @@
         pkgs.pkgconfig
       ];
     };
+
+    defaultPackage.system = null;
   };
 }

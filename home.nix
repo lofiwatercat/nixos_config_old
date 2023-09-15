@@ -29,17 +29,20 @@
     ];
   };
 
-  # home.file.".config/nix/registry.json".text = builtins.toJSON {
-  # version = 1;
-  # registries = {
-  #     rust = {
-  #       flake = "./dev_flakes/rust-flake";
-  #     };
-  #     rust-git = {
-  #       flake = "github:lofiwatercat/nixos_config/dev_flakes/rust-flake";
-  #     };
-  #   };
-  # };
+  nix.registry = {
+    rust = {
+      from = {
+        id = "rust";
+        type = "indirect";
+      };
+      to = {
+        type = "github";
+        # path = "./dev_flakes/rust-flake";
+        owner = "lofiwatercat";
+        repo = "nixos_config";
+      };
+    };
+  };
 
    
   programs.home-manager.enable = true;
