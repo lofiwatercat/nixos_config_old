@@ -8,6 +8,7 @@
       ./dotfiles/foot.nix
       ./dotfiles/helix.nix
       ./dotfiles/sway.nix
+      ./dotfiles/waybar.nix
     ];
 
   home = {
@@ -21,12 +22,25 @@
 
     packages = with pkgs; [
       fuzzel
-      cargo
-      rustc
-      rust-analyzer
+      # cargo
+      # rustc
+      # rust-analyzer
       swww
     ];
   };
-    
+
+  # home.file.".config/nix/registry.json".text = builtins.toJSON {
+  # version = 1;
+  # registries = {
+  #     rust = {
+  #       flake = "./dev_flakes/rust-flake";
+  #     };
+  #     rust-git = {
+  #       flake = "github:lofiwatercat/nixos_config/dev_flakes/rust-flake";
+  #     };
+  #   };
+  # };
+
+   
   programs.home-manager.enable = true;
 }
