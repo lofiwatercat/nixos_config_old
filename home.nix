@@ -36,10 +36,11 @@
         type = "indirect";
       };
       to = {
-        type = "github";
+        type = "path";
         # path = "./dev_flakes/rust-flake";
-        owner = "lofiwatercat";
-        repo = "nixos_config";
+        path = toString ./. + "/dev_flakes/rust-flake";
+        # owner = "lofiwatercat";
+        # repo = "nixos_config";
       };
     };
   };

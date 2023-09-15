@@ -4,7 +4,7 @@
   inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
 
   outputs = { self, nixpkgs }: {
-    devShells.x86_64-linux = let
+    devShell.x86_64-linux = let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
     in pkgs.mkShell {
