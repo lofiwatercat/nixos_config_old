@@ -35,7 +35,6 @@
         # specialArgs = inputs;
         modules = [
           ./configuration.nix
-          ./hardware-configuration.nix
 
           home-manager.nixosModules.home-manager {
             home-manager = {

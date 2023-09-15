@@ -7,19 +7,23 @@
       mainBar = {
         layer = "top";
         position = "top";
+        outpt = [
+          "eDP-1"
+          "HDMI-A-1"
+        ];
         height = 30;
         modules-left = [ "sway/workspaces" "sway/mode" ];
         modules-center = [ "sway/window" ];
-        modules-right = [ "mpd" "network" "clock#date" "clock#time" ]
-        "clock#time": {
+        modules-right = [ "mpd" "network" "clock#date" "clock#time" ];
+        "clock#time" = {
           interval = 1;
-          format = "{:%H:%M:%S}";
+          format = "\{:%H:%M:%S\}";
           tooltip = false;
         };
-        "clock#date": {
+        "clock#date" = {
           interval = 10;
-          format = "{:%e %b %Y"};
-          tooltip-format = "{:%e %B %Y}";
+          format = "\{:%e %b %Y\}";
+          tooltip-format = "\{:%e %B %Y\}";
         };
       };
     };
