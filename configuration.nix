@@ -80,6 +80,8 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  services.flatpak.enable = true;
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     git
@@ -95,6 +97,7 @@
     imv
     wl-clipboard
     pulseaudio
+    systemd
 
     # Create an FHS environment using the command `fhs` to enable binaries
     (let base = pkgs.appimageTools.defaultFhsEnvArgs; in

@@ -9,6 +9,7 @@
     };
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
+      eval "$(starship init bash)"
     '';
   };
 }

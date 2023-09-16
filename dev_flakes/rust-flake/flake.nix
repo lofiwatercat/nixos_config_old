@@ -12,8 +12,8 @@
         rustc
         cargo
         rust-analyzer
-        # openssl
-        # pkgconfig
+        openssl
+        pkg-config
       ];
     };
 

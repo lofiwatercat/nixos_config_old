@@ -18,9 +18,16 @@
         vulkan-caps-viewer
         vulkan-tools-lunarg
         vulkan-validation-layers
-        # openssl
-        # pkgconfig
+        libxkbcommon
+        libGL
+        udev
+        udev
+        alsa-lib
+        openssl
+        pkg-config
       ];
+
+      # LD_LIBRARY_PATH = nixpkgs.lib.makeLibraryPath buildInputs;
     };
 
     defaultPackage.x86_64-linux = null;

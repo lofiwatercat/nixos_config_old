@@ -9,6 +9,7 @@
       ./dotfiles/helix.nix
       ./dotfiles/sway.nix
       ./dotfiles/waybar.nix
+      ./dotfiles/starship.nix
     ];
 
   home = {
@@ -25,6 +26,9 @@
       fuzzel
       swww
       wayland
+      airshipper
+      nerdfonts
+      swaycons
     ];
   };
 
