@@ -22,7 +22,7 @@
             vulkan-validation-layers
             libxkbcommon
             libGL
-            udev
+            wayland
             udev
             alsa-lib
             openssl
