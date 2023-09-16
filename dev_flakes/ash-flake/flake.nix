@@ -29,8 +29,8 @@
             pkg-config
           ];
           LD_LIBRARY_PATH = nixpkgs.lib.makeLibraryPath buildInputs;
+          VK_LAYER_PATH = "${pkgs.vulkan-validation-layers}/share/vulkan/explicit_layer.d";
         };
-          # defaultPackage.x86_64-linux = null;
       });
 
 }

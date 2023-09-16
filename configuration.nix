@@ -61,6 +61,7 @@
 
   hardware.opengl.enable = true;
   hardware.opengl.driSupport = true;
+  hardware.opengl.driSupport32Bit = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.alan = {
