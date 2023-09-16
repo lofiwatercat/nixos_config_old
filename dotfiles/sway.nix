@@ -34,7 +34,7 @@
       };
       startup = [
         { command = "swww init"; }
-        { command = "swww img ~/.config/wallpapers/anime-gruv-light.png"; }
+        { command = "swww img $HOME/wallpapers/anime-gruv-light.png"; }
       ];
     };
   };

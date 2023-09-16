@@ -32,6 +32,11 @@
     ];
   };
 
+  home.file."wallpapers" = {
+    source = ./dot_files/wallpapers;
+    recursive = true;
+  };
+
   nix.registry = {
     rust = {
       from = {
