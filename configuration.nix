@@ -99,6 +99,8 @@
     wl-clipboard
     pulseaudio
     systemd
+    nerdfonts
+    swaycons
 
     # Create an FHS environment using the command `fhs` to enable binaries
     (let base = pkgs.appimageTools.defaultFhsEnvArgs; in

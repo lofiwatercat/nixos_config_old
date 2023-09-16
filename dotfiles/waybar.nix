@@ -13,7 +13,7 @@
         ];
         height = 30;
         modules-left = [ "sway/workspaces" "sway/mode" ];
-        modules-center = [ "sway/window" ];
+        # modules-center = [ "sway/window" ];
         modules-right = [ "mpd" "network" "clock#date" "clock#time" ];
         "clock#time" = {
           interval = 1;

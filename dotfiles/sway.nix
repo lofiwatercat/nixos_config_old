@@ -4,13 +4,14 @@
   wayland.windowManager.sway = {
     enable = true;
     xwayland = true;
-    config = rec {
+    config = {
       modifier = "Mod4";
       terminal  = "foot";
       floating.titlebar = false;
       bars = [
         {
           position = "top";
+          command = "waybar";
         }
       ];
       gaps = {
@@ -34,7 +35,7 @@
       };
       startup = [
         { command = "swww init"; }
-        { command = "swww img $HOME/wallpapers/anime-gruv-light.png"; }
+        { command = "swww img $HOME/.config/wallpapers/anime-gruv-light.png"; }
       ];
     };
   };

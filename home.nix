@@ -27,13 +27,13 @@
       swww
       wayland
       airshipper
-      nerdfonts
-      swaycons
+      mpd
+      steam
     ];
   };
 
-  home.file."wallpapers" = {
-    source = ./dot_files/wallpapers;
+  home.file.".config/wallpapers" = {
+    source = ./dotfiles/wallpapers;
     recursive = true;
   };
 
