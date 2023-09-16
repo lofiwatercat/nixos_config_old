@@ -53,6 +53,16 @@
         path = toString ./. + "/dev_flakes/ash-flake";
       };
     };
+    nix = {
+      from = {
+        id = "nix";
+        type = "indirect";
+      };
+      to = {
+        type = "path";
+        path = toString ./. + "/dev_flakes/nix-flake";
+      };
+    };
   };
 
    
