@@ -29,6 +29,8 @@
       airshipper
       mpd
       steam
+      marksman
+      winePackages.wayland
     ];
   };
 
