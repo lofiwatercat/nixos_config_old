@@ -31,13 +31,24 @@
       steam
       marksman
       winePackages.wayland
+      lutris
     ];
   };
 
+  
   home.file.".config/wallpapers" = {
     source = ./dotfiles/wallpapers;
     recursive = true;
   };
+
+  # gtk = {
+  #   enable = true;
+  #   cursorTheme = {
+  #     package = pkgs.bibata-cursors;
+  #     name = "Bibata-Modern-Ice";
+  #     size = 24;
+  #   };
+  # };
 
   nix.registry = {
     rust = {
