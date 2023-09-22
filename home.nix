@@ -30,8 +30,14 @@
       mpd
       steam
       marksman
-      winePackages.wayland
+
+      # wine
+      wineWowPackages.waylandFull
       lutris
+      winetricks
+      mono
+      samba
+      
     ];
   };
 

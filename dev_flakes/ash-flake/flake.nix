@@ -12,6 +12,7 @@
         devShell = mkShell rec {
           buildInputs = [
             rustc
+            rustfmt
             cargo
             rust-analyzer
             vulkan-tools
@@ -20,6 +21,7 @@
             vulkan-caps-viewer
             vulkan-tools-lunarg
             vulkan-validation-layers
+            vulkan-extension-layer
             libxkbcommon
             libGL
             wayland

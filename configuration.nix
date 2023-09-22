@@ -43,7 +43,13 @@
     fira-code-symbols
   ];
 
-  services.printing.enable = true;
+  services = {
+    printing.enable = true;
+    avahi.enable = true;
+    avahi.nssmdns = true;
+    avahi.openFirewall = true;
+  };
+
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
